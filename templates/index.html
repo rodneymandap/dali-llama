@@ -1,18 +1,37 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+{% block css %}
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+{% endblock %}
+
+{% block content %}
+<br>
+
+<div class="container-fluid">
+    <div id='map' style='width: 100%; height: 500px;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9kbmV5MzciLCJhIjoiY2tmczhqdjBiMGRxazJ4dHM3bHhoNzR2ciJ9.s9pm_cE73lqLzr8AYoqnOA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+            center: [-74.5, 40], // starting position [lng, lat]
+            zoom: 9 // starting zoom
+        });
+    </script>
+</div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
+
+
+
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     </head>
-    <body>
-        <nav></nav>
-        <div id='map' style='width: 400; height: 300;'></div>
-        <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9kbmV5MzciLCJhIjoiY2tmczhqdjBiMGRxazJ4dHM3bHhoNzR2ciJ9.s9pm_cE73lqLzr8AYoqnOA';
-        var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
-        });
-        </script>
-    </body>
-</html>
+</html> -->
