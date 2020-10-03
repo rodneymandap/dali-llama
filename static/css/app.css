@@ -25,3 +25,14 @@ body {
     font-size: 5.0vh;
 }
 
+.divider {
+    border-left: 1px solid;
+}
+
+@media (max-width: 600px) {
+    .divider {
+        border-top: 1px solid;
+        border-left: none;
+    }
+}
+
