@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/app.css">
+    {% block css %}{% endblock %}
+</head>
+
+<body>
+    {% block body %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Dali Llama</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Methodology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Country Insight</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Social Mobility</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Economic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Environment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/team">Meet the Team</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+        <!-- <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-light" href="/team">Methodology</a>
+            <a class="p-2 text-light" href="/team">Country Insights</a>
+            <a class="p-2 text-light" href="/team">Social Mobility</a>
+            <a class="p-2 text-light" href="/team">Economic</a>
+            <a class="p-2 text-light" href="/team">Environment</a>
+            <a class="p-2 text-light" href="/team">Meet the Team</a>
+        </nav> -->
+        <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    {% block script %}
+    {% endblock %}
+    {% endblock body %}
+</body>
+
+</html>
