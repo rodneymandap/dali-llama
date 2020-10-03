@@ -4,9 +4,24 @@
 
 .card img {
     /* padding-left: 10px; */
+    height: 450px;
 }
+
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
 }
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+#team-title {
+    font-size: 5.0vh;
+}
+
