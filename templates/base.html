@@ -21,7 +21,7 @@
 
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Methodology</a>
                 </li>
                 <li class="nav-item">
@@ -40,20 +40,8 @@
                     <a class="nav-link divider" href="/team">Meet the Team</a>
                 </li>
             </ul>
-
         </div>
-
     </nav>
-        <!-- <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-light" href="/team">Methodology</a>
-            <a class="p-2 text-light" href="/team">Country Insights</a>
-            <a class="p-2 text-light" href="/team">Social Mobility</a>
-            <a class="p-2 text-light" href="/team">Economic</a>
-            <a class="p-2 text-light" href="/team">Environment</a>
-            <a class="p-2 text-light" href="/team">Meet the Team</a>
-        </nav> -->
-        <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
-    </div>
 
     {% block content %}
     {% endblock %}
@@ -67,6 +55,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            let pathname = window.location.pathname;
+            $('ul > li > a[href="'+pathname+'"]').parent().addClass('active');
+        })
+    </script>
     {% block script %}
     {% endblock %}
     {% endblock body %}
