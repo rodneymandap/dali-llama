@@ -5,3 +5,8 @@
 .card img {
     /* padding-left: 10px; */
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
