@@ -45,6 +45,9 @@
 
     {% block content %}
     {% endblock %}
+    <footer class="border-top bg-dark" style="text-align: center;">
+        <b>NASA Space Apps Challenge - Powered by Team Dali Llama</b>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -57,9 +60,9 @@
         crossorigin="anonymous"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             let pathname = window.location.pathname;
-            $('ul > li > a[href="'+pathname+'"]').parent().addClass('active');
+            $('ul > li > a[href="' + pathname + '"]').parent().addClass('active');
         })
     </script>
     {% block script %}
