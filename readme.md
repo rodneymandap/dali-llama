@@ -1,7 +1,7 @@
 # Dali Llama
 
 ## Project Demo
-* [Website] (https://dalillama.co)
+* [Website](https://dalillama.co)
 
 ## Data and Resources
 
