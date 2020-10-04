@@ -1,23 +1,52 @@
 {% extends 'base.html' %}
-
-{% block title %}Home{% endblock %}
-{% block css %}
-<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
-{% endblock %}
-
 {% block content %}
+<div class="container">
+    <div class="content">
 
-<div class="container-fluid">
-    <div id='map' style='width: 100%; height: 550px;'></div>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9kbmV5MzciLCJhIjoiY2tmczhqdjBiMGRxazJ4dHM3bHhoNzR2ciJ9.s9pm_cE73lqLzr8AYoqnOA';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-            center: [123.068848, 10.833306], // starting position [lng, lat]
-            zoom: 9 // starting zoom
-        });
-    </script>
+    <h2 style="text-align: center;">About Llama</h2>
+    <br>
+    <h3>What is HAB?</h3>
+    <p>Harmful Algal Bloom (HAB) is used to describe a proliferation of algae, or phytoplankton. Severe blooms of even
+        non-toxic algae can spell disaster for cultured animals, because blooms deplete the oxygen in the shallow waters
+        of many aquaculture systems. </p>
+    <p>HABs can cause serious economic losses in aquaculture if they kill cultured organisms or cause consumers concern
+        about food safety.</p>
+    <p>Banrie (2013). Algal Toxins in Pond Aquaculture. Ireland: Hatch Accelerator Holding Limited. Retrieved from
+        <a href="https://thefishsite.com/articles/algal-toxins-in-pond-aquaculture">https://thefishsite.com/articles/algal-toxins-in-pond-aquaculture.</a>
+    </p>
+    <br>
+
+    <h3>The Solution</h3>
+    <p>Dali Llama is an open-source web app that uses satellite data to detect and analyze HABs as well as the predicted movements of suspected algal blooms with computer vision and machine learning.</p>
+
+    <h6>The goals of this project are:</h6>
+    <ul>
+        <li>Mitigation of fish kill</li>
+        <li>Avoidance of water contamination</li>
+        <li>Protection of wildlife</li>
+    </ul>
+    <h6>In order to ensure:</h6>
+    <ul>
+        <li>Sustainable living</li>
+        <li>Livelihood of future generations</li>
+    </ul>
+    <p>Societies extract vast quantities of water from rivers, lakes, wetlands, and oceans to supply the requirements of cities, farms, and industries. The information gathered by our monitoring program will let the users stay updated about the present condition of the bodies of water.</p>
+
+    <br>
+    <h3>How does it work?</h2>
+
+    <p>1. The near-real-time (NRT) data of water surface temperature and other essential data will be used for detecting HABs.</p>
+    <p>2. Once algal blooms are detected, the fishermen will be informed and alerted through a text message that a certain body of water is polluted by algae. </p>
+    <p>The coastal areas that are able to identify and prevent its adverse implications give a better likelihood for the community to thrive and flourish.</p>
+
+    <br>
+    <h3>The Beneficiaries</h2>
+    <p>Government units grapple with the early detection of harmful algal blooms (HABs) leading to massive fish kills and lack of access to clean water for communities highly dependent on rivers and lakes for drinking or livelihood.
+</p>
+
+    <p>Hence, we are developing a real-time web app readily available for the public to encourage a proactive approach among the government and concerned individuals towards sustained clean water & sanitation and life below water (SDGs 6 & 14).</p>
+
+
+    </div>
 </div>
 {% endblock %}

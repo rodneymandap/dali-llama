@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="content">
+        <h2><b>Methodology</b></h2>
+        <br>
+        <div class="card-deck mb-4">
+            <div class="card mb-2 shadow-sm">
+                <div class="card-header" style="text-align: center;">Data Used</div>
+                <div class="card-body">
+                    <ol>
+                        <li>Chlorophyll-a</li>
+                        <li>Colored Dissolved Organic Matter (CDOM)</li>
+                        <li>Normalized Fluorescence Line Height</li>
+                        <li>Sea Surface Temperature</li>
+                        <li>Organic and Inorganic Carbon Particulate (POC and PIC)</li>
+                        <li>Phytoplankton absorption at 443nm wavelength (blue-green algae)</li>
+                        <li>Remote surface reflectance at the green wavelength (531nm+)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card mb-2 shadow-sm">
+                <div class="card-header" style="text-align: center;">Satellites Used</div>
+                <div class="card-body">
+                    <ol>
+                        <li>MODIS Aqua and Terra for near real-time (NRT) readings.</li>
+                        <li>Suomi NPP - VIIRS for higher resolution data and cross referencing.</li>
+                        <li>Landsat-8 for testing</li>
+                    </ol>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+{% endblock %}
