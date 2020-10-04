@@ -1,4 +1,4 @@
-# Leveled Detection for the Living Aquaculture Monitoring of Harmful Algal-Blooms
+# Leveled Detection for the Living Aquaculture Monitoring of Harmful Algal-Blooms (LLAMA)
 
 ## Summary
 
