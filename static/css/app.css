@@ -60,7 +60,6 @@ footer {
 .container-fluid {
     padding: 0 !important;
 }
-
 .container {
     position: relative;
     padding-bottom: 3rem;
@@ -90,4 +89,16 @@ h2 {
 
 h2, h3 {
     font-weight: bold;
+}
+
+#header-pic {
+    background-image: url('/static/images/background.jpg');
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.10);
+    height: 500px;
+    background-size: cover;
+}
+
+.card-title {
+    margin-top: 150px;
 }
