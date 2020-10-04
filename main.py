@@ -25,10 +25,6 @@ def about():
 def environment():
     return render_template('environment.html')
 
-@app.route('/insight')
-def insight():
-    return render_template('insights.html')
-
 @app.route('/methodology')
 def methodology():
     return render_template('methodology.html')
