@@ -42,10 +42,20 @@ body {
 #map {
     height: 100%;
     width: 100%;
+    margin-top: 50px;
 }
 
 footer {
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
+}
+
+.navbar-brand {
+    font-family: 'Work Sans', san-serif;
+    font-size: 20px;
+}
+
+.container-fluid {
+    padding: 0 !important;
 }
